@@ -1,0 +1,39 @@
+.logo {
+    width: 3rem;
+        margin: 0 20px;
+        padding-top: 3px;
+        cursor: pointer;
+  }
+  .nav{
+    background-color: rgba(86, 125, 233, 0.8);
+    width: 100%;
+    position: sticky;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .navItems {
+    list-style: none;
+        display: flex;
+        padding-right: 10px;
+        justify-content: space-evenly;
+  }
+  .carrito {
+    justify-content: end;
+  }
+  .menuDesplegado {
+    position: absolute;
+    display: none !important;
+    gap: 5rem;
+    text-decoration: none;
+    list-style: none;
+  }
+  
+  @media (min-width: 768px) {
+    .btnMenu {
+      display: none !important;
+    }
+    .menuDesplegado {
+      display: flex !important;
+    }
+  }
